@@ -88,6 +88,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5174',
     'http://127.0.0.1:5173',
     'https://restaurant-k39cc9sgh-bouyesaturnins-projects.vercel.app',
+    'https://restaurant-ia.onrender.com',
 ]
 FRONTEND_URL = os.getenv('FRONTEND_URL')
 if FRONTEND_URL:
