@@ -88,6 +88,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5174',
     'http://127.0.0.1:5173',
     'https://restaurant-ia.onrender.com',
+    'https://restaurant-ia-beta.vercel.app',
 ]
 # Autorise tous les sous-domaines Vercel du projet
 CORS_ALLOWED_ORIGIN_REGEXES = [
