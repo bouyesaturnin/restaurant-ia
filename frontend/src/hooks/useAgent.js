@@ -130,17 +130,17 @@ function makeMsg(role, text) {
   return { id: Date.now() + Math.random(), role, text, timestamp: new Date() }
 }
 
-const WELCOME = `Bonsoir et bienvenue au **Jardin Doré** ! 🌿
+const WELCOME = `Bienvenue au **MBOA Restaurant** ! 🌍
 
-Je suis votre assistant personnel. Je peux vous aider avec :
+Je suis votre assistant. Je peux vous aider avec :
 
 • 🗓 **Réserver** une table
-• 🍽 Consulter notre **menu** complet
+• 🍽 Consulter notre **menu** camerounais & africain
 • 📦 Passer une **commande à emporter**
 • ❓ Vos **questions** (horaires, adresse, contact)
 • ⭐ Partager votre **avis**
 
-Comment puis-je vous être utile ?`
+Comment puis-je vous aider ?`
 
 export function useAgent() {
   const [messages, setMessages] = useState([makeMsg('assistant', WELCOME)])
