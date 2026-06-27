@@ -1,4 +1,6 @@
-import anthropic
+import json
+import re
+from openai import OpenAI
 from django.conf import settings
 
 SYSTEM_PROMPT = """Tu es l'assistant virtuel du restaurant **Le Jardin Doré**, une brasserie méditerranéenne raffinée située au 42 Rue des Saveurs, 75008 Paris.
@@ -79,28 +81,28 @@ Tu réponds toujours en français, avec un ton chaleureux, élégant et professi
 
 def chat(messages: list[dict]) -> tuple[str, dict | None]:
     """
-    Envoie les messages à Claude et retourne (texte_réponse, action_optionnelle).
+    Envoie les messages à Groq et retourne (texte_réponse, action_optionnelle).
     `messages` est une liste de {"role": "user"|"assistant", "content": "..."}
     """
-    client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
-
-    response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=1024,
-        system=SYSTEM_PROMPT,
-        messages=messages,
+    client = OpenAI(
+        api_key=settings.GROQ_API_KEY,
+        base_url="https://api.groq.com/openai/v1",
     )
 
-    full_text = response.content[0].text
+    response = client.chat.completions.create(
+        model="llama-3.1-8b-instant",
+        max_tokens=1024,
+        messages=[{"role": "system", "content": SYSTEM_PROMPT}] + messages,
+    )
+
+    full_text = response.choices[0].message.content
 
     # Extrait le bloc JSON d'action s'il est présent
     action = None
-    import json, re
     match = re.search(r'```json\s*(\{.*?\})\s*```', full_text, re.DOTALL)
     if match:
         try:
             action = json.loads(match.group(1))
-            # Retire le bloc JSON du texte visible
             full_text = full_text[:match.start()].strip()
         except json.JSONDecodeError:
             pass

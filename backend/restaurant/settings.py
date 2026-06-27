@@ -99,4 +99,4 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': ['rest_framework.renderers.JSONRenderer'],
 }
 
-ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY', '')
+GROQ_API_KEY = os.getenv('GROQ_API_KEY', '')
