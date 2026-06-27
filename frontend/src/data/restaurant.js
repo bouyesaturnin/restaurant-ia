@@ -55,9 +55,9 @@ export const RESTAURANT = {
         id: 'p5',
         name: 'Héro + Watafoufou',
         price: 18,
-        desc: 'Feuilles d\'eru (héro) mijotées au waterleaf et huile de palme, servies avec du watafoufou — un classique de l\'Afrique de l\'Ouest',
+        desc: 'Plat festif originaire du Sud-Ouest Cameroun, préparé à partir de feuilles d\'Eru (Okok), de waterleafs, de viande de bœuf, de poisson séché et de crevettes séchées. Un plat convoité, servi lors des grandes occasions — simple dans ses ingrédients, extraordinaire en saveurs !',
         tags: ['sans gluten'],
-        allergens: ['poisson fumé'],
+        allergens: ['poisson', 'crustacés'],
       },
     ],
     desserts: [
