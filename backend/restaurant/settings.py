@@ -87,9 +87,12 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://localhost:5174',
     'http://127.0.0.1:5173',
-    'https://restaurant-k39cc9sgh-bouyesaturnins-projects.vercel.app',
-    'https://restaurant-3toqcknau-bouyesaturnins-projects.vercel.app',
     'https://restaurant-ia.onrender.com',
+]
+# Autorise tous les sous-domaines Vercel du projet
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r'^https://restaurant-.*\.vercel\.app$',
+    r'^https://.*-bouyesaturnins-projects\.vercel\.app$',
 ]
 FRONTEND_URL = os.getenv('FRONTEND_URL')
 if FRONTEND_URL:
