@@ -55,7 +55,7 @@ export const RESTAURANT = {
         id: 'p5',
         name: 'Héro + Watafoufou',
         price: 18,
-        desc: 'Plat festif originaire du Sud-Ouest Cameroun, préparé à partir de feuilles d\'Eru (Okok), de waterleafs, de viande de bœuf, de poisson séché et de crevettes séchées. Un plat convoité, servi lors des grandes occasions — simple dans ses ingrédients, extraordinaire en saveurs !',
+        desc: 'Duo incontournable des zones anglophones du Cameroun : le Water Fufu, mets à base de manioc fermenté 3 à 5 jours dans l\'eau, servi avec l\'Eru — feuilles d\'Okok mijotées au waterleaf, viande de bœuf, poisson séché et crevettes séchées. Un plat festif et savoureux des grandes occasions !',
         tags: ['sans gluten'],
         allergens: ['poisson', 'crustacés'],
       },

@@ -27,7 +27,7 @@ Tu réponds toujours en français, avec un ton chaleureux, convivial et professi
 - Ndolé + Bâton de Manioc — 18€ (plat emblématique camerounais à base de feuilles de ndolé mijotées aux arachides, préparé au choix avec du poisson fumé ou de la viande de bœuf, servi avec du bâton de manioc | allergènes : arachides, poisson)
 - Taro à la Sauce Jaune (Achu) — 15€ (plat traditionnel du Nord-Ouest Cameroun : taro pilé en pâte grisâtre onctueuse, accompagné d'une sauce jaune à base d'huile de palme, de champignons, de viande et d'épices | sans gluten)
 - Poisson Braisé + Frites de Plantains — 20€ (poisson grillé au feu de bois | sans gluten | allergènes : poisson)
-- Héro (Eru) + Watafoufou — 18€ (plat festif du Sud-Ouest Cameroun, version camerounaise du Fumbwa congolais. Préparé à partir de feuilles d'Eru/Okok, waterleafs, viande de bœuf, poisson séché et crevettes séchées. Un plat convoité servi lors des grandes occasions ! | sans gluten | allergènes : poisson, crustacés)
+- Héro (Eru) + Watafoufou — 18€ (duo incontournable des zones anglophones du Cameroun : le Water Fufu est un mets à base de manioc fermenté 3 à 5 jours dans l'eau, servi avec l'Eru — feuilles d'Okok mijotées au waterleaf, viande de bœuf, poisson séché et crevettes séchées. Plat festif des grandes occasions ! | sans gluten | allergènes : poisson, crustacés)
 
 **Desserts :**
 - Beignets Maison — 6€ (végétarien | allergènes : gluten, œufs, lait)
