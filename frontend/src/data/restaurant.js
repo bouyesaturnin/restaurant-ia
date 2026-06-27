@@ -31,7 +31,7 @@ export const RESTAURANT = {
         id: 'p2',
         name: 'Ndolé + Bâton de Manioc',
         price: 18,
-        desc: 'Plat emblématique camerounais : feuilles de ndolé mijotées aux arachides et viande, servi avec du bâton de manioc traditionnel',
+        desc: 'Plat emblématique camerounais à base de feuilles de ndolé mijotées aux arachides, préparé au choix avec du poisson fumé ou de la viande de bœuf. Servi avec du bâton de manioc traditionnel.',
         tags: [],
         allergens: ['arachides', 'poisson'],
       },
