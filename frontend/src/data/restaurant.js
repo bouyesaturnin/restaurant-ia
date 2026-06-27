@@ -39,8 +39,8 @@ export const RESTAURANT = {
         id: 'p3',
         name: 'Taro à la Sauce Jaune',
         price: 15,
-        desc: 'Taro cuit à la perfection, nappé d\'une sauce jaune onctueuse aux épices africaines',
-        tags: ['végétarien', 'sans gluten'],
+        desc: 'L\'Achu, plat traditionnel de la région du Nord-Ouest Cameroun : taro pilé jusqu\'à obtenir une pâte grisâtre onctueuse, accompagné d\'une sauce jaune à base d\'huile de palme, de champignons, de viande et d\'épices.',
+        tags: ['sans gluten'],
         allergens: [],
       },
       {
