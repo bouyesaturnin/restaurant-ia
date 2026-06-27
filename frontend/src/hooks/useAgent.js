@@ -40,7 +40,8 @@ function detectIntent(text) {
   if (/horaire|heure|ouvert|ferme|quand/.test(t)) return 'FAQ_HOURS'
   if (/adresse|ou etes|situe|trouver|chemin|comment venir/.test(t)) return 'FAQ_ADDRESS'
   if (/contact|telephone|appel|email|joindre/.test(t)) return 'FAQ_CONTACT'
-  if (/menu|carte|plat|manger|allergi|vegeta|vegan|gluten/.test(t)) return 'MENU'
+  if (/allergi|intoleran|sans gluten|vegeta|vegan/.test(t)) return 'FAQ_ALLERGIES'
+  if (/menu|carte|plat|manger|que proposez|qu.est.ce que/.test(t)) return 'MENU'
   if (/commander|emporter|takeaway|pickup|recuperer|a emporter/.test(t)) return 'ORDER'
   if (/merci|excellent|super|parfait|bravo|ravi|adore|incroyable/.test(t)) return 'REVIEW_POSITIVE'
   if (/mauvais|horrible|decep|decu|probleme|insatisf|nul|catastrophe/.test(t)) return 'REVIEW_NEGATIVE'
@@ -104,6 +105,9 @@ function localReply(text, flowState, setFlowState, setShowMenu) {
       return `📍 **Notre adresse :**\n\n${RESTAURANT.address}\n\n🚇 Métro Saint-Philippe-du-Roule (ligne 9) — 3 min à pied\n🚗 Parking Haussmann à 200 m`
     case 'FAQ_CONTACT':
       return `📞 **Contact :**\n\n• Téléphone : ${RESTAURANT.phone}\n• Email : ${RESTAURANT.email}\n• Disponible tous les jours de 10h à 22h`
+    case 'FAQ_ALLERGIES':
+      setShowMenu(true)
+      return `Bien sûr, voici nos plats adaptés selon les allergies courantes :\n\n**🦐 Allergie aux fruits de mer / mollusques :**\nÉvitez le Poulpe Grillé et le Tataki de Thon. Tous nos autres plats sont sans fruits de mer.\n\n**🌾 Sans gluten :**\nBurrata, Gaspacho, Daurade, Risotto, Poulpe, Buddha Bowl, Crème Brûlée, Sorbet.\n\n**🥛 Sans lactose :**\nGaspacho Andalou, Daurade, Agneau Méchoui, Tataki de Thon, Sorbet Citron.\n\nJe vous affiche la carte complète avec les filtres. N'hésitez pas à préciser votre allergie pour une recommandation personnalisée ! 😊`
     case 'MENU':
       setShowMenu(true)
       return `Voici notre **carte** ! 🍽\n\nFiltrez par préférence : 🌿 Végétarien · 🌱 Vegan · 🚫 Sans gluten\n\nDes questions sur les **allergènes** ? Je suis là.`
